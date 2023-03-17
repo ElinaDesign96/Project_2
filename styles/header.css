@@ -2,15 +2,33 @@ header {
     display: flex;
     background-color: #000000;
     align-items: center;
-    padding: 0 25px 0;
+    padding: 0px 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
 }
 
 .left-section {
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 .menu-section {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.menu-section p {
+    padding: 0 14px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.menu-section p:hover {
+    opacity: 0.9;
 }
 
 .logo-netflix {
@@ -20,14 +38,41 @@ header {
 
 .middle-section {
     display: flex;
-    justify-content: space-between;
-    /* background-color: blueviolet; */
-    width: 100%
+    justify-content: left;
+    background-color: blueviolet;
+    /* width: 100%; */
 }
+
+select {
+    background-image: url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css) */ appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: white;
+    background: none;
+    background: url(icons/icons header/bxs-down-arrow.svg) no-repeat right center;
+    border: none;
+    padding-right: 20px;
+    cursor: pointer;
+    /* max-width: 90px;
+    min-width: 90px;
+    width: 250px !important; */
+    display: none;
+    width: 90px;
+}
+
+option {
+    background-color: #000000;
+    width: 600px;
+    height: 500px;
+
+}
+
 
 .right-section {
     display: flex;
     align-items: center;
+    justify-content: end;
+
 }
 
 #icon-header {
@@ -42,4 +87,16 @@ header {
     background-color: rgb(0, 106, 235);
     margin-left: 25px;
     border-radius: 5px;
+}
+
+@media screen and (max-width:900px) {
+    .menu-section {
+        display: none;
+    }
+
+    select {
+        display: inline-block;
+    }
+
+
 }
