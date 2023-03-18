@@ -42,6 +42,7 @@
 
 .movie-info button:hover {
     opacity: 0.8;
+
 }
 
 .button-play {
@@ -104,4 +105,10 @@
     padding: 4px 10px;
     border-radius: 4px;
     font-weight: bold;
+}
+
+.fade-gradient {
+    margin-top: -100px;
+    height: 100px;
+    background-image: linear-gradient(180deg, transparent, rgba(18, 18, 18, 0.9), #000000);
 }

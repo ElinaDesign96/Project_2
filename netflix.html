@@ -84,34 +84,75 @@
                 </div>
             </div>
         </div>
+        <div class="fade-gradient"></div>
+
         <div class="gallery">
+
             <!-- >Continue Watching for Kevin -->
+
             <div class="row">
                 <p>Continue Watching for Kevin</p>
-
                 <div class="slider">
                     <button>
                         <!-- <i class="bx bx-chevron-left icon-row"> -->
                     </button>
-                    <img src="pictures movies/ozark.png">
-                    <img src="pictures movies/pontier.png">
-                    <img src="pictures movies/the good place.png">
-                    <img src="pictures movies/durante.png">
-                    <img src="pictures movies/the office.png">
-                    <img src="pictures movies/infiesto.png">
-                    <img src="pictures movies/wednesday.png">
-                    <img src="pictures movies/skyrojo.png">
-                    <img src="pictures movies/emilyinparis.png">
-                    <img src="pictures movies/lovingadults.png">
-                    <img src="pictures movies/tinder.png">
+                    <img src="pictures movies/ozark.png" class="row-img">
+                    <img src="pictures movies/pontier.png" class="row-img">
+                    <img src="pictures movies/the good place.png" class="row-img">
+                    <img src="pictures movies/durante.png" class="row-img">
+                    <img src="pictures movies/the office.png" class="row-img">
+                    <img src="pictures movies/infiesto.png" class="row-img">
+                    <img src="pictures movies/wednesday.png" class="row-img">
+                    <img src="pictures movies/skyrojo.png" class="row-img">
+                    <img src="pictures movies/emilyinparis.png" class="row-img">
+                    <img src="pictures movies/lovingadults.png" class="row-img">
+                    <img src="pictures movies/tinder.png" class="row-img">
                     <button>
                         <!-- <i class="bx bx-chevron-right icon-row"> -->
                     </button>
                 </div>
             </div>
+
+            <!-- >Top Picks for Kevin -->
+
+            <div class="row">
+                <p>Top Picks for Kevin</p>
+                <div class="slider">
+                    <button>
+                        <!-- <i class="bx bx-chevron-left icon-row"> -->
+                    </button>
+                    <img src="pictures movies/ozark.png" class="row-img">
+                    <img src="pictures movies/pontier.png" class="row-img">
+                    <img src="pictures movies/the good place.png" class="row-img">
+                    <img src="pictures movies/durante.png" class="row-img">
+                    <img src="pictures movies/the office.png" class="row-img">
+                    <img src="pictures movies/infiesto.png" class="row-img">
+                    <img src="pictures movies/wednesday.png" class="row-img">
+                    <img src="pictures movies/skyrojo.png" class="row-img">
+                    <img src="pictures movies/emilyinparis.png" class="row-img">
+                    <img src="pictures movies/lovingadults.png" class="row-img">
+                    <img src="pictures movies/tinder.png" class="row-img">
+                    <button>
+                        <!-- <i class="bx bx-chevron-right icon-row"> -->
+                    </button>
+                </div>
+            </div>
+
+
     </main>
 
     <footer></footer>
+    <script>
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                header.classlist.add('header-black')
+            } else {
+                header.classList.remove('header-black')
+            }
+        })
+    </script>
 </body>
 
 </html>
