@@ -1,14 +1,4 @@
-body {
-    /* background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
-    margin: 0;
-    height: 3000px;
-}
-
 .main-section {
-
     background-image: url('../main-picture.png');
     height: 100vh;
     width: 100%;
@@ -19,10 +9,99 @@ body {
     background-position: center center;
 }
 
-/* /* /* 
-.main-picture {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-/*  */
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    position: absolute;
+    top: 25%;
+    left: 45px;
+
+}
+
+.picture-movie-name {
+    width: 50%;
+    height: auto;
+}
+
+.movie-info>p {
+    width: 50%;
+    color: white;
+    padding-bottom: 25px;
+}
+
+.movie-info button {
+    padding: 16px 28px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+
+}
+
+.movie-info button:hover {
+    opacity: 0.8;
+}
+
+.button-play {
+    background-color: rgb(246, 246, 246);
+    color: black;
+    margin-right: 10px;
+}
+
+.button-info {
+    background-color: rgba(158, 158, 158, 0.7);
+    color: white;
+}
+
+.icon-button {
+    font-size: 22px;
+}
+
+.main-right-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 540px;
+    right: 5px;
+
+}
+
+.button-repeat {
+    background: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    margin-right: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.button-repeat:hover {
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.repeat-arrow {
+    font-size: 22px;
+    color: white;
+    padding: 2px 4px 0 4px;
+    font-weight: 100;
+
+}
+
+.main-right-section div {
+    background-color: rgba(10, 10, 10, 0.6);
+    padding: 8px 80px 8px 15px;
+
+    border-left-style: solid;
+    border-left-width: 3px;
+    border-left-color: white;
+}
+
+.main-right-section p {
+    background-color: yellow;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
