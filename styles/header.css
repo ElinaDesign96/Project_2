@@ -126,7 +126,8 @@ option {
     font-size: 12px;
 
     display: none;
-    transition: display 2s;
+    transition-timing-function: ease-in;
+    transition: display 5s;
 
 
 }
