@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" id="header">
         <div class="left-section">
             <img class="logo-netflix" src="icons/icons header/Netflix-transp.png">
         </div>
@@ -50,9 +50,40 @@
             </div>
         </div>
         <div class="right-section">
-            <i class="bx bx-search icon-header"></i>
-            <i class="bx bx-bell icon-header"></i>
-            <div class="user-icon"></div>
+            <i class="bx bx-search icon-header search"></i>
+            <i class="bx bx-bell icon-header notification"></i>
+            <div class="user-icon">
+                <div class="user-tooltip">
+                    <div>
+                        <div class="user-icon cr"></div>
+                        <p>Christophe</p>
+                    </div>
+                    <div class="users">
+                        <div class="user-icon sil"></div>
+                        <p>Silvie</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-pencil icon-tooltip"></i>
+                        <p>Manage Profile</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-face icon-tooltip"></i>
+                        <p>Transfer Profile</p>
+                    </div>
+                    <div>
+                        <i class="bx bx-user icon-tooltip"></i>
+                        <p>Account</p>
+                    </div>
+                    <div class=menu-end>
+                        <i class="bx bx-help-circle icon-tooltip "></i>
+                        <p>Help Center</p>
+                    </div>
+                    <div class="sign-out">
+                        <p>Sign out of Netflix</p>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </header>
 
@@ -93,7 +124,7 @@
             <div class="row">
                 <p>Continue Watching for Kevin</p>
                 <div class="slider">
-                    <button>
+                    <button class="slide-show-button">
                         <!-- <i class="bx bx-chevron-left icon-row"> -->
                     </button>
                     <img src="pictures movies/ozark.png" class="row-img">
@@ -107,7 +138,7 @@
                     <img src="pictures movies/emilyinparis.png" class="row-img">
                     <img src="pictures movies/lovingadults.png" class="row-img">
                     <img src="pictures movies/tinder.png" class="row-img">
-                    <button>
+                    <button class="slide-show-button-end">
                         <!-- <i class="bx bx-chevron-right icon-row"> -->
                     </button>
                 </div>
@@ -138,21 +169,71 @@
                 </div>
             </div>
 
+            <!-- Trending Now -->
 
+            <div class="row">
+                <p>Trending Now</p>
+                <div class="slider">
+                    <button>
+                        <!-- <i class="bx bx-chevron-left icon-row"> -->
+                    </button>
+                    <img src="pictures movies/ozark.png" class="row-img">
+                    <img src="pictures movies/pontier.png" class="row-img">
+                    <img src="pictures movies/the good place.png" class="row-img">
+                    <img src="pictures movies/durante.png" class="row-img">
+                    <img src="pictures movies/the office.png" class="row-img">
+                    <img src="pictures movies/infiesto.png" class="row-img">
+                    <img src="pictures movies/wednesday.png" class="row-img">
+                    <img src="pictures movies/skyrojo.png" class="row-img">
+                    <img src="pictures movies/emilyinparis.png" class="row-img">
+                    <img src="pictures movies/lovingadults.png" class="row-img">
+                    <img src="pictures movies/tinder.png" class="row-img">
+                    <button>
+                        <!-- <i class="bx bx-chevron-right icon-row"> -->
+                    </button>
+                </div>
+            </div>
+
+            <!-- My List -->
+
+            <div class="row">
+                <p>My List</p>
+                <div class="slider">
+                    <button>
+                        <!-- <i class="bx bx-chevron-left icon-row"> -->
+                    </button>
+                    <img src="pictures movies/ozark.png" class="row-img">
+                    <img src="pictures movies/pontier.png" class="row-img">
+                    <img src="pictures movies/the good place.png" class="row-img">
+                    <img src="pictures movies/durante.png" class="row-img">
+                    <img src="pictures movies/the office.png" class="row-img">
+                    <img src="pictures movies/infiesto.png" class="row-img">
+                    <img src="pictures movies/wednesday.png" class="row-img">
+                    <img src="pictures movies/skyrojo.png" class="row-img">
+                    <img src="pictures movies/emilyinparis.png" class="row-img">
+                    <img src="pictures movies/lovingadults.png" class="row-img">
+                    <img src="pictures movies/tinder.png" class="row-img">
+                    <button>
+                        <!-- <i class="bx bx-chevron-right icon-row"> -->
+                    </button>
+                </div>
+            </div>
+
+            <script>
+                const header = document.getElementById('header');
+
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY >= 100) {
+                        header.classlist.add('header_black')
+                    } else {
+                        header.classList.remove('header_black')
+                    }
+                })
+            </script>
     </main>
 
     <footer></footer>
-    <script>
-        const header = document.getElementById('header');
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY >= 100) {
-                header.classlist.add('header-black')
-            } else {
-                header.classList.remove('header-black')
-            }
-        })
-    </script>
 </body>
 
 </html>

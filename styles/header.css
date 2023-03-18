@@ -1,12 +1,24 @@
+p {
+    padding: 0;
+    margin: 0;
+}
+
 header {
     display: flex;
-    background-color: #000000;
+    background-image: linear-gradient(360deg, transparent, rgba(18, 18, 18, 0.8), #000000);
+    ;
     align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 1000;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
 
+}
+
+.header_black {
+    background-color: #000000;
 }
 
 .left-section {
@@ -18,6 +30,8 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
+    cursor: pointer;
+    transition: opacity 1s;
 
 }
 
@@ -28,7 +42,7 @@ header {
 }
 
 .menu-section p:hover {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 .logo-netflix {
@@ -80,17 +94,98 @@ option {
 .icon-header {
     font-size: 30px;
     color: white;
-    margin-left: 25px
+    cursor: pointer;
+    margin-right: 25px;
+
 }
 
 .user-icon {
     width: 30px;
     height: 30px;
     background-color: rgb(0, 106, 235);
-    margin-left: 25px;
     border-radius: 5px;
+    cursor: pointer;
+    position: relative;
 }
 
+/* TOOLTIP FOR USER */
+
+.user-tooltip {
+    background-color: rgba(0, 0, 0, 0.9);
+
+    position: absolute;
+    top: 40px;
+    right: 0px;
+
+    width: max-content;
+    padding: 10px 0;
+    width: 220px;
+
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+
+    display: none;
+    transition: display 2s;
+
+
+}
+
+.user-tooltip div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-icon .cr {
+    background-color: rgb(231, 220, 62);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.user-icon .sil {
+    background-color: rgb(204, 53, 53);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.icon-tooltip {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.user-tooltip .users {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(73, 73, 73);
+}
+
+.menu-end {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(73, 73, 73);
+    padding-bottom: 10px;
+}
+
+.sign-out {
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+.user-tooltip p {
+    cursor: pointer;
+}
+
+.user-icon:hover .user-tooltip {
+    display: list-item;
+}
+
+.user-tooltip p:hover {
+    text-decoration: underline;
+}
 
 
 @media screen and (max-width:900px) {
