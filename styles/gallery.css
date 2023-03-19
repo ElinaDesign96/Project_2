@@ -28,6 +28,123 @@
 
 }
 
+/* TOOLTIP-VIDEO */
+
+.image-video-main {
+    position: relative;
+
+}
+
+.tooltip-video {
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: rgb(60, 60, 60);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    /* opacity: 0; */
+    visibility: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.image-video-main:hover .tooltip-video {
+    /* opacity: 1; */
+    visibility: visible;
+}
+
+.first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.first-row button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: none;
+    margin-right: 10px;
+    border: 1px solid white;
+}
+
+.first-row .play {
+    background-color: white;
+}
+
+.icon-tooltip-video {
+    font-size: 35px;
+    color: black;
+}
+
+.icon-tooltip-video .plus,
+.icon-tooltip-video .like,
+.icon-tooltip-video .arrow {
+    color: white;
+
+}
+
+.second-row {
+    display: flex;
+    align-items: center;
+
+}
+
+/* margin time */
+.first-row,
+.second-row,
+.third-row {
+    margin-left: 10px;
+}
+
+.second-row * {
+    margin-right: 10px;
+}
+
+.match {
+    color: rgb(0, 186, 0);
+    font-size: 16px;
+}
+
+
+.seasons {
+    color: white;
+}
+
+.age {
+    background-color: orangered;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    padding: 3px 3px 0 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.qlty {
+    background-color: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+.third-row {
+    display: flex;
+    align-items: center;
+}
+
+.third-row h4 {
+    color: white;
+
+}
+
 /* !!!!!!!!!!CHECK!!!!!!! */
 .slide-show-button {
     background-color: rgba(251, 121, 121, 0.5);
