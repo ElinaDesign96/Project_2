@@ -116,18 +116,25 @@
 
 .image-video-main {
     position: relative;
+    background-color: aqua;
 }
 
 .tooltip-video {
-    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(60, 60, 60); */
     border-radius: 10px;
     position: absolute;
-    top: 0px;
+    top: 0;
     bottom: 0;
-    z-index: 5000;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
     opacity: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 
+}
+
+.image-video-main:hover .tooltip-video {
+    opacity: 1;
 }
 
 .first-row {
@@ -136,7 +143,10 @@
     justify-content: space-between;
     margin-bottom: 0;
     margin-left: 10px;
+
 }
+
+
 
 .first-row button {
     width: 50px;
@@ -163,11 +173,11 @@
 
 }
 
-
 .second-row {
     display: flex;
     align-items: center;
     margin-left: 10px;
+
 }
 
 .second-row * {
